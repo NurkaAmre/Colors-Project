@@ -5,11 +5,13 @@
 }
 
 body {
-    font-family: 'Rubik Bubbles', cursive;
+    /* font-family: 'Rubik Gemstones', cursive; */
+    font-family: 'Monoton', cursive;
     color: rgb(96, 95, 95);
 }
 button {
-    font-family: 'Rubik Bubbles', cursive;
+    /* font-family: 'Rubik Gemstones', cursive; */
+    font-family: 'Monoton', cursive;
 }
 
 path, i, svg {
@@ -34,20 +36,24 @@ path, i, svg {
     font-size: 2rem;
     cursor: pointer;
 }
+div button {
+    color: rgb(140, 152, 165);
+}
 .sliders {
     position: absolute;
     display: flex;
     flex-direction: column;
     bottom: 0%;
-    background: rgb(198, 124, 124);
+    background: rgb(235, 230, 230);
     padding: 1rem;
-    opacity: 0;
+    /* opacity: 0; */
     width: 80%;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    transform: translateY(100px);
+    /* transform: translateY(100px); */
     transition: all 0.5s ease-in-out;
-    pointer-events: none;
+    /* pointer-events: none; */
+    
 }
 .sliders.active {
     opacity: 1;
@@ -103,4 +109,18 @@ path, i, svg {
     background: none;
     margin: 2rem 0rem;
     cursor: pointer;
+}
+
+/* SLIDER STUFF */
+input[type="range"] {
+    -webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+span {
+    color: lightsteelblue;
 }
