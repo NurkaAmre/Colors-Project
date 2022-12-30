@@ -18,7 +18,17 @@ class ColorPicker {
         //ADD THE COLOR TO THE BG
         div.style.backgroundColor = randomColor;
         hexText.innerText = randomColor;
+        //check for contrast
+        this.checkTextContrast(randomColor, hexText)
         })
+    }
+    checkTextContrast(color, text) {
+        const luminance = chroma(color).luminance();
+        if (luminance > 0.5) {
+            text.style.color = 'grey';
+        } else {
+            text.style.color = 'white';
+        }
     }
 }
 
